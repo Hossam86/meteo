@@ -1,8 +1,8 @@
 FROM python:3
-EXPOSE 5000
+EXPOSE 5001
 
 RUN mkdir /app
-WORKDir /app
+WORKDIR /app
 
 COPY requirements.txt /app/requirements.txt
 RUN pip install -r requirements.txt
